@@ -1,6 +1,6 @@
-from precompile import findBrackets, parseCode
-from convert import decompress
-from config import Config
+from libs.precompile import findBrackets, parseCode
+from libs.convert import decompress
+from libs.config import Config
 
 def checkZero(index, value):
     if value < 0:
