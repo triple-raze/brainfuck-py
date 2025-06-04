@@ -1,4 +1,4 @@
-from config import Config
+from libs.config import Config
 
 def parseCode(code):
     
