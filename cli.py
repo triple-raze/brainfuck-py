@@ -1,5 +1,6 @@
-from convert import compress, decompress, convertString
-from interpreter import Config, run, runFile, setByteMode, changeLightMode
+from libs.convert import compress, decompress, convertString
+from libs.interpreter import run, runFile, setByteMode, changeLightMode
+from libs.config import Config
 
 def cmd_lightMode():
     Config.lightMode = changeLightMode(Config.lightMode)
@@ -27,8 +28,7 @@ def cmd_help():
     print(commands.keys())
 
 def cmd_exit():
-    exit
-    print("Cant exit for some reason")
+    exit()
 
 commands = {
     "open":       cmd_open,          # открытие файла
