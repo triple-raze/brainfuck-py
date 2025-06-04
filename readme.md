@@ -83,7 +83,6 @@ with open(filePath, "r") as f:
     code = f.read()
     response = requests.get(f"{url}/run?data={code}")
     print(response.text)
-  
 ```
 
 Этот код лежит в папке examples.
