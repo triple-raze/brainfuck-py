@@ -46,3 +46,13 @@ def compress(inputString):
         finalString += f"{charCount}{secondChar}"
     
     return finalString
+
+
+def convertString(inputString):
+
+    output = ""
+    
+    for char in inputString:
+        output += f"{ord(char)}+.>"
+            
+    return output
