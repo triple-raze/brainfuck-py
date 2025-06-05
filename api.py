@@ -18,6 +18,7 @@ functionList = {
     "convertstring":    convertString,
     "parsecode":        parseCode,
     "findbrackets":     findBrackets
+    "":                 lambda _: list(functionList.keys())     # эта строка нужна для генерации домашней страницы со всеми командами
 }
 
 app = FastAPI()
